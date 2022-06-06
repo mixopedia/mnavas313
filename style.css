@@ -47,12 +47,24 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+
+.sm{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.fab{
+    padding-right: 20px;
+    font-size: 25px;
+}
 section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -191,12 +203,13 @@ section .title::after{
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    margin-bottom: 20px;
 }
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a{
+.home .hireme a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -207,6 +220,9 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
+}
+.home .home-content a{
+    color: #fff;
 }
 .home .home-content a:hover{
     color: crimson;
@@ -239,6 +255,16 @@ section .title::after{
 }
 .about .about-content .right p{
     text-align: justify;
+}
+.sm a {
+    display: inline-block;
+    color: #383434;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.sm a:hover{
+    color: crimson;
+    background: none;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -640,7 +666,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    .home .home-content{
         font-size: 20px;
     }
     .services .serv-content .card{
